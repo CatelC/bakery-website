@@ -7,7 +7,7 @@ export default function Header() {
                 <a href="/">
                     <Image
                         className="button"
-                        src="/images/Home.png"
+                        src="/Home.png"
                         width={115}
                         height={100}
                         alt="Home Button"
@@ -16,7 +16,7 @@ export default function Header() {
                 <a href="">
                     <Image
                         className="button"
-                        src="/images/Games.png"
+                        src="/Games.png"
                         width={130}
                         height={100}
                         alt="Games Button"
@@ -25,7 +25,7 @@ export default function Header() {
                 <a href="/about">
                     <Image
                         className="button"
-                        src="/images/About Us.png"
+                        src="/About Us.png"
                         width={206}
                         height={100}
                         alt="About Us Button"
