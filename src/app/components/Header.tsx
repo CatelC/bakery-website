@@ -1,4 +1,7 @@
 import Image from "next/image";
+import homeLogo from "../../../public/images/Home.png"
+import gamesLogo from "../../../public/images/Games.png"
+import aboutLogo from "../../../public/images/About Us.png"
 
 export default function Header() {
     return (
@@ -7,7 +10,7 @@ export default function Header() {
                 <a href="/">
                     <Image
                         className="button"
-                        src="/images/Home.png"
+                        src={homeLogo}
                         width={115}
                         height={100}
                         alt="Home Button"
@@ -16,7 +19,7 @@ export default function Header() {
                 <a href="">
                     <Image
                         className="button"
-                        src="/images/Games.png"
+                        src={gamesLogo}
                         width={130}
                         height={100}
                         alt="Games Button"
@@ -25,7 +28,7 @@ export default function Header() {
                 <a href="/about">
                     <Image
                         className="button"
-                        src="/images/About Us.png"
+                        src={aboutLogo}
                         width={206}
                         height={100}
                         alt="About Us Button"
