@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "../../public/images/Logo.png"
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <div className="z-10 w-full max-w-5xl items-center font-mono text-sm lg:flex">
         <Image
           className="banner"
-          src="/Logo.png"
+          src={Logo}
           width={1200}
           height={100}
           alt="The Bakery Banner"
