@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import homeLogo from "../../../public/images/Home.png"
 import gamesLogo from "../../../public/images/Games.png"
 import aboutLogo from "../../../public/images/About Us.png"
@@ -7,7 +8,7 @@ export default function Header() {
     return (
         <nav>
             <div className="navigation">
-                <a href="/">
+                <Link href="/">
                     <Image
                         className="button"
                         src={homeLogo}
@@ -15,8 +16,8 @@ export default function Header() {
                         height={100}
                         alt="Home Button"
                     />
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     <Image
                         className="button"
                         src={gamesLogo}
@@ -24,8 +25,8 @@ export default function Header() {
                         height={100}
                         alt="Games Button"
                     />
-                </a>
-                <a href="/about">
+                </Link>
+                <Link href="/about">
                     <Image
                         className="button"
                         src={aboutLogo}
@@ -33,7 +34,7 @@ export default function Header() {
                         height={100}
                         alt="About Us Button"
                     />
-                </a>
+                </Link>
             </div>
         </nav>
     );

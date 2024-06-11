@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  basePath: "/bakery-website",
+  reactStrictMode: true,
+};
 
 export default nextConfig;
