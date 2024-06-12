@@ -33,7 +33,7 @@ body {
 }
 
 .navigation{
-  height: 4rem;
+  height: 6vh;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(41, 41, 41);
@@ -62,4 +62,30 @@ body {
 }
 .description > a > p {
   color: rgb(255, 223,193)
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+}
+.characterPanel{
+  /*background-color: rgb(247, 75, 75); */
+  display: flex;
+  width: 70%;
+  height: 70%;
+  align-items: center;
+  justify-content: space-around;
+}
+.characterSheet{
+  background-color: rgb(41, 41, 41); 
+  border-radius: 20px;
+  width: 20%;
+  height: 50%;
+}
+.characterSheet > div {
+  margin-top: 1rem;
+  margin-left: 5px;
+  color: beige;
 }
