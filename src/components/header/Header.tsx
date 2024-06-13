@@ -8,33 +8,27 @@ export default function Header() {
     return (
         <nav>
             <div className="navigation">
-                <Link href="/">
-                    <Image
-                        className="button"
-                        src={homeLogo}
-                        width={115}
-                        height={100}
-                        alt="Home Button"
-                    />
-                </Link>
-                <Link href="">
-                    <Image
-                        className="button"
-                        src={gamesLogo}
-                        width={130}
-                        height={100}
-                        alt="Games Button"
-                    />
-                </Link>
-                <Link href="/about">
-                    <Image
-                        className="button"
-                        src={aboutLogo}
-                        width={206}
-                        height={100}
-                        alt="About Us Button"
-                    />
-                </Link>
+                <Link href="/" style={{
+                    backgroundImage: `url(${homeLogo.src})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "100%",
+                    imageRendering: "pixelated",
+                }}/>
+                <Link href="" style={{
+                    backgroundImage: `url(${gamesLogo.src})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "100%",
+                    imageRendering: "pixelated",
+                }}/>
+                <Link href="/about" style={{
+                    backgroundImage: `url(${aboutLogo.src})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "100%",
+                    imageRendering: "pixelated",
+                }}/>
             </div>
         </nav>
     );
