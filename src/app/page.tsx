@@ -4,7 +4,7 @@ import Logo from "../../public/images/Logo.png"
 export default function Home() {
   return (
     
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="home flex flex-col items-center">
       
       <div className="z-10 w-full max-w-5xl items-center font-mono text-sm lg:flex">
         <Image

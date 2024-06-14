@@ -1,23 +1,20 @@
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 interface SocialMediaProps {
+    style?: string;
     type: string;
     link: string;
     name: string;
 }
 
-const SocialMedia: FC<SocialMediaProps> = ({ type, link, name }) => {
+const SocialMedia: FC<SocialMediaProps> = ({ type, link, name, style }) => {
     return (
         <div className="socials">
             <Link href={link} target="_blank">
-                <Image
-                    className="banner"
+                <img className={style}
                     src={type}
-                    width={75}
-                    height={75}
-                    alt="The Bakery Banner"
                 />
                 {name}
             </Link>

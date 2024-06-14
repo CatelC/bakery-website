@@ -55,7 +55,30 @@ body {
   justify-content: center;
   image-rendering: pixelated;
 }
-
+.footer{
+  height: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+}
+.logo{
+  width: 52px;
+  height: 52px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+.tinyLogo{
+  width: 40px;
+  height: 40px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+.home{
+  height: 88vh;
+}
 .description {
   width: 30%;
 }
@@ -78,7 +101,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 94vh;
+  height: 88vh;
 }
 .characterPanel{
   /*background-color: rgb(247, 75, 75); */
