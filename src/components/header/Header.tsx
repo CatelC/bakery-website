@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import homeLogo from "../../../public/images/Home.png"
 import gamesLogo from "../../../public/images/Games.png"
-import aboutLogo from "../../../public/images/About Us.png"
+import aboutLogo from "../../../public/images/AboutUs.png"
 
 export default function Header() {
     return (
@@ -12,21 +12,21 @@ export default function Header() {
                     backgroundImage: `url(${homeLogo.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-                    backgroundSize: "100%",
+                    backgroundSize: "contain",
                     imageRendering: "pixelated",
                 }}/>
                 <Link href="" style={{
                     backgroundImage: `url(${gamesLogo.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-                    backgroundSize: "100%",
+                    backgroundSize: "contain",
                     imageRendering: "pixelated",
                 }}/>
                 <Link href="/about" style={{
                     backgroundImage: `url(${aboutLogo.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-                    backgroundSize: "100%",
+                    backgroundSize: "contain",
                     imageRendering: "pixelated",
                 }}/>
             </div>

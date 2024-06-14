@@ -6,6 +6,7 @@ interface CharacterSheetProps {
     name: string;
     surname?: string;
     job: string;
+    
 }
 
 const CharacterSheet: FC<CharacterSheetProps> = ({ profilePicPath, name, surname, job }) => {

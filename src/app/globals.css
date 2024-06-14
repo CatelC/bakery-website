@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: characterFont;
+  font-family: pixelFont;
   src: url(../../public/novem___.ttf);
 }
 :root {
@@ -44,12 +44,8 @@ body {
   background-color: rgb(41, 41, 41);
 }
 .navigation > a {
-  width: 10%;
+  width: 15%;
   height: 70%;
-}
-.navigation > a > div {
-  background-color: blue;
-
 }
 .button {
   image-rendering: pixelated;
@@ -68,7 +64,7 @@ body {
   border-color: rgb(230, 170, 115);
   border-width: 3px;
   justify-content: center;
-  font-family: characterFont
+  font-family: pixelFont
 }
 .description > a > h2 {
   color: rgb(255, 223, 193)
@@ -79,6 +75,7 @@ body {
 
 .about{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 94vh;
@@ -96,7 +93,7 @@ body {
   border-radius: 20px;
   width: 30%;
   height: 80%;
-  font-family: characterFont;
+  font-family: pixelFont;
 }
 .characterSheet > div {
   margin-top: 5%;
@@ -115,4 +112,19 @@ body {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+}
+
+.socials > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: azure;
+  font-family: pixelFont;
+  font-size: 200%;
+}
+.socials > a > img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  margin-right: 10px;
 }
