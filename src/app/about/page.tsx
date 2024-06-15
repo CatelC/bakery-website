@@ -18,14 +18,33 @@ export default function About() {
                     name="CATEL"
                     surname="Clement"
                     job="Software Engineer, Game Developer"
-                    twitter="https://x.com/AIkazart"
+                >
+                    <SocialMedia
+                        type={twitter.src}
+                        style="tinyLogo"
+                        link="https://x.com/AIkazart"
+                        name="@AIkazart"
+                    />
+                    <SocialMedia   
+                    type={linkedin.src}
+                    style="tinyLogo"
+                    link="https://www.linkedin.com/company/the-bakery-game-studio/"
+                    name="@thebagerygs"
                 />
+                </CharacterSheet>
                 <CharacterSheet
                     profilePicPath={PPLouis.src}
                     name="CATEL"
                     surname="Louis"
                     job="Sound Designer, Composer, Pixel Artist"
+                >
+                    <SocialMedia   
+                    type={linkedin.src}
+                    style="tinyLogo"
+                    link="https://www.linkedin.com/company/the-bakery-game-studio/"
+                    name="@thebagerygs"
                 />
+                </CharacterSheet>
             </div>
         </main>
     );

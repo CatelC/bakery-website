@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { ComponentType, FC, ReactNode } from "react";
 import Image from "next/image";
-import SocialMedia from "./SocialMediaLink";
+import {SocialMedia , SocialMediaProps} from "./SocialMediaLink";
 import instaPath from "../../../public/images/socials/instagram.png"
 import linkedinPath from "../../../public/images/socials/linkedin.png"
 import twitterPath from "../../../public/images/socials/twitter.png"
@@ -11,11 +11,10 @@ interface CharacterSheetProps {
     name: string;
     surname?: string;
     job: string;
-    twitter?: string;
-
+    children?: ReactNode;
 }
 
-const CharacterSheet: FC<CharacterSheetProps> = ({ profilePicPath, name, surname, job, twitter }) => {
+const CharacterSheet: FC<CharacterSheetProps> = ({ profilePicPath, name, surname, job, children}) => {
     return (
         <div className="characterSheet" 
         style={{
@@ -27,14 +26,7 @@ const CharacterSheet: FC<CharacterSheetProps> = ({ profilePicPath, name, surname
         }}>
             <div>{name} {surname}</div>
             <div>{job}</div>
-            {twitter &&
-                <SocialMedia
-                style="tinyLogo"
-                type={twitterPath.src}
-                link={twitter}
-                name=""
-                />
-            }
+            {children}
         </div>
     );
 }
