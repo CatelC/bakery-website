@@ -46,9 +46,15 @@ body {
 .navigation > a {
   width: 15%;
   height: 70%;
+  border-radius:20%;
 }
+.navigation > a:hover {
+  filter: drop-shadow(2px 2px 1px rgba(255, 223, 193, 0.5))
+}
+
 .button {
   image-rendering: pixelated;
+
 }
 .banner {
   top: 0;
@@ -125,11 +131,19 @@ body {
 
 .socials > a {
   display: flex;
+  width: max-content;
   flex-direction: row;
   align-items: end;
   color: azure;
   font-family: pixelFont;
   font-size: 200%;
+}
+.socials > a:hover {
+  border-color: rgba(230, 171, 115, 0.808);
+  background-color: rgba(255, 223, 193, 0.829);
+  border-width: 4px;
+  border-radius: 5px;
+  color:rgb(0, 0, 0)
 }
 .socials > a > img {
   image-rendering: pixelated;
