@@ -8,21 +8,21 @@ export default function Header() {
     return (
         <nav>
             <div className="navigation">
-                <Link href="/" style={{
+                <Link href="/" className="navBarButton" style={{
                     backgroundImage: `url(${homeLogo.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
                     backgroundSize: "contain",
                     imageRendering: "pixelated",
                 }}/>
-                <Link href="" style={{
+                <Link href="/games" className="navBarButton" style={{
                     backgroundImage: `url(${gamesLogo.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
                     backgroundSize: "contain",
                     imageRendering: "pixelated",
                 }}/>
-                <Link href="/about" style={{
+                <Link href="/about" className="navBarButton" style={{
                     backgroundImage: `url(${aboutLogo.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
