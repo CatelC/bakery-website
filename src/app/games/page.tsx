@@ -1,12 +1,13 @@
 import GameSheet from "@/components/games/GameSheet";
 import defaultBackground from "../../../public/images/games/default.png"
+import theBakeryBackground from "../../../public/images/games/TheBakery.png"
 
 export default function Games(){
     return (
         <main className="games">
             <div className="gamePanel">
                 <GameSheet
-                backgroundImagePath={defaultBackground.src}
+                backgroundImagePath={theBakeryBackground.src}
                 name="The Bakery Pixel Simulator"
                 link="/thebakerypxsim"
                 />
