@@ -107,6 +107,7 @@ body {
   background-color: rgb(41, 41, 41); 
   border-radius: 20px;
   width: 30%;
+  min-width: 15%;
   height: 80%;
   font-family: pixelFont;
 }
@@ -196,6 +197,15 @@ body {
 .game{
   height: 88vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  justify-content: start;
+}
+.game > * {
+  padding-top: 5%;
+}
+.title {
+  font-size: 200%;
+  font-family: pixelFont;
+  color:rgb(230, 170, 115);
 }

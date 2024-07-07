@@ -2,7 +2,7 @@ export default function thebakery() {
     return (
         <main className="game">
 
-            <div className="description mb-32 grid text-center ">
+            <div className="description grid text-center ">
                 <a
                     className="group border px-5 py-4 transition-colors"
                     target="_blank"
@@ -16,6 +16,9 @@ export default function thebakery() {
                     </p>
                 </a>
             </div>
+            <p className="title">
+                What you can expect in The Bakery :
+            </p>
         </main>
     );
 }
