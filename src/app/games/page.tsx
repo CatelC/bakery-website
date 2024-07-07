@@ -9,7 +9,7 @@ export default function Games(){
                 <GameSheet
                 backgroundImagePath={theBakeryBackground.src}
                 name="The Bakery Pixel Simulator"
-                link="/thebakerypxsim"
+                link="/thebakery"
                 />
                 <GameSheet
                 backgroundImagePath={defaultBackground.src}
