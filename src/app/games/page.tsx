@@ -8,7 +8,7 @@ export default function Games(){
             <div className="gamePanel">
                 <GameSheet
                 backgroundImagePath={theBakeryBackground.src}
-                name="The Bakery Pixel Simulator"
+                name="The Bakery"
                 link="/thebakery"
                 />
                 <GameSheet

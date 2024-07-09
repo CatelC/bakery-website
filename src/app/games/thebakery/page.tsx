@@ -1,3 +1,6 @@
+import GameIdea from "@/components/games/GameIdea";
+import defaultBackground from "../../../../public/images/games/default.png"
+
 export default function thebakery() {
     return (
         <main className="game">
@@ -19,6 +22,18 @@ export default function thebakery() {
             <p className="title">
                 What you can expect in The Bakery :
             </p>
+            <div className="gameIdeaSheet">
+                <GameIdea
+                text="Realistic and reproductible recipes or breads and pastries that you can follow through a series of minigame, or even in real life !"
+                backgroundImagePath={defaultBackground.src}
+                />
+                <GameIdea
+                text="Manage your own bakery! Buy the ingredients, upgrade your tools and sell your homemade pastries to your client."
+                />
+                <GameIdea
+                text="A cozy bakery, homemade pixel art and music."
+                />
+            </div>
         </main>
     );
 }
