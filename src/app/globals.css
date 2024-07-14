@@ -226,31 +226,45 @@ body {
   justify-content: space-between;
 }
 .gameIdea {
-  background-image: var(--bg-image-game-idea);
-  background-size: contain;
-  image-rendering: pixelated;
   width: 20%;
   height: 100%;
+  display: grid;
+  position: relative;
+  transition: color 1s, border-color 1s;
+}
+.gameIdea::before {
+  background-image: var(--bg-image-game-idea);
+  background-size: contain;
   border-radius: 25px;
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.gameDiv{
+  isolation:isolate;
+  display: flex;
+  height: 100%;
+  width: 100%;
   border-width: 3px;
+  border-radius: 25px;
   border-color: rgba(0, 0, 0, 0);
   color:rgb(0, 0, 0,0);
+  background-color: rgba(90, 18, 18, 0);
   text-align: center;
   font-family: pixelFont;
   text-wrap: balance;
-  transition: color 1s, border-color 1s;
-  
+  place-items: center;
+  transition: backdrop-filter 1s, color 1s, border-color 1s;
 }
-.gameIdea:hover {
+
+.gameDiv:hover{
   border-color: rgba(230, 171, 115, 0.808);
   color:rgb(255, 223, 193);
-  backdrop-filter: opacity(0.1);
-}
-.gameIdea > div {
-  width: 100%;
-  height: 100%;
+  backdrop-filter: blur(5px);
+  backdrop-filter: brightness(0.5);
 }
 .gameIdea > p {
   isolation: isolate;
-  opacity: 2;
 }
+
