@@ -198,6 +198,7 @@ body {
 .gameSheet {
   width: 60%;
   height: 30%;
+  border-radius: 25px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -234,11 +235,13 @@ body {
 }
 .gameIdea::before {
   background-image: var(--bg-image-game-idea);
-  background-size: contain;
   border-radius: 25px;
   content: '';
   position: absolute;
   inset: 0;
+}
+.gameIdeaDefault::before{
+  background-size: contain;
 }
 
 .gameDiv{

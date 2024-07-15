@@ -12,7 +12,6 @@ export default function Games(){
                 link="/thebakery"
                 />
                 <GameSheet
-                backgroundImagePath={defaultBackground.src}
                 name="Coming Soon"
                 link="/comingsoon"/>
             </div>
