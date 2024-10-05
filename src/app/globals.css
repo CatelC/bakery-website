@@ -6,6 +6,7 @@
   font-family: pixelFont;
   src: url(../../public/novem___.ttf);
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 51, 51, 51;
@@ -21,6 +22,11 @@
   }
 }
 */
+
+.pageOuter {
+  position: relative;
+  min-height: 100%;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -39,7 +45,7 @@ body {
 
 .navigation{
   height: 6vh;
-  min-height: 50px;
+  min-height: 40px;
   min-width: 600px;
   display: flex;
   justify-content: space-evenly;
@@ -65,34 +71,50 @@ body {
   top: 0;
   justify-content: center;
   image-rendering: pixelated;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vh;
 }
 .footer{
-  height: 6vh;
-  min-height: 50px;
+  min-height: 6vh;
   min-width: 600px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
   background-color: rgb(41, 41, 41);
+  clear: both;
+  padding: 6px 10px;
+  text-align: right;
+  position:absolute;
+  width:100%;
+  margin-top: 1vh;
 }
 .home{
-  height: 88vh;
+  height: 86vh;
+  flex-grow: 1;
 }
 .description {
-  width: 30%;
+  min-width: 30%;
+  max-width: 70%;
 }
 .description > a {
+  max-height: 30vh; 
   border-radius: 25px;
   border-color: rgb(230, 170, 115);
   border-width: 3px;
   justify-content: center;
-  font-family: pixelFont
+  font-family: pixelFont;
 }
 .description > a > h2 {
-  color: rgb(255, 223, 193)
+  color: rgb(255, 223, 193);
+  font-size: 4vh;
 }
 .description > a > p {
-  color: rgb(255, 223,193)
+  color: rgb(255, 223,193);
+  font-size: 2.5vh;
 }
 
 .about{
@@ -207,6 +229,7 @@ body {
 }
 .game{
   height: 88vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items:center;

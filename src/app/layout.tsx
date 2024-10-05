@@ -19,15 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <header>
-          <Header/>
-        </header>
-        <main>
-          {children}
-        </main>
-        <footer>
-          <Footer/>
-        </footer>
+        <div className="pageOuter">
+          <header>
+            <Header />
+          </header>
+          <main>
+            {children}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
       </body>
     </html>
   );

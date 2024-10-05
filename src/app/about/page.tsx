@@ -57,6 +57,12 @@ export default function About() {
                         link="https://soundcloud.com/louis-catel"
                         name="UraZ"
                     />
+                    <SocialMedia
+                        type={youtube.src}
+                        style="tinyLogo"
+                        link="https://www.youtube.com/@louiscatel3586"
+                        name="Uraz - Louis Catel"
+                    />
                 </CharacterSheet>
             </div>
         </main>
