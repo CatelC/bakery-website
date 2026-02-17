@@ -21,12 +21,6 @@ export default function About() {
                     job="Software Engineer, Game Developer"
                 >
                     <SocialMedia
-                        type={twitter.src}
-                        style="tinyLogo"
-                        link="https://x.com/AIkazart"
-                        name="@AIkazart"
-                    />
-                    <SocialMedia
                         type={linkedin.src}
                         style="tinyLogo"
                         link="https://www.linkedin.com/in/clement-catel/"
@@ -48,8 +42,8 @@ export default function About() {
                     <SocialMedia
                         type={insta.src}
                         style="tinyLogo"
-                        link="https://www.instagram.com/louis._ctl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        name="@louis._ctl"
+                        link="https://www.instagram.com/uraz.lc/"
+                        name="@uraz.lc"
                     />
                     <SocialMedia
                         type={youtube.src}
