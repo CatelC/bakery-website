@@ -1,9 +1,25 @@
 .navigation{
-  height: 6vh;
-  min-height: 40px;
+  min-height: 6vh;
   min-width: 600px;
+  top: 0px;
+  height: 10%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: fixed;
   background-color: rgb(41, 41, 41);
+}
+
+.navBarButton {
+  width: 15%;
+  min-width: 10%;
+  height: 70%;
+  min-height: 60%;
+  border-radius:20%;
+}
+.navigation > a:hover {
+  filter: drop-shadow(2px 2px 1px rgba(255, 223, 193, 0.5))
 }

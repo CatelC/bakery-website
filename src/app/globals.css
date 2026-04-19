@@ -18,13 +18,22 @@
   }
 }
 */
-
-.pageOuter {
-  position: relative;
-  min-height: 100vh;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
+html, body
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 body {
+  margin:0%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -34,76 +43,41 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-
-.navBarButton {
-  width: 15%;
-  min-width: 10%;
-  height: 70%;
-  min-height: 60%;
-  border-radius:20%;
-}
-.navigation > a:hover {
-  filter: drop-shadow(2px 2px 1px rgba(255, 223, 193, 0.5))
-}
-
-.button {
-  image-rendering: pixelated;
-
-}
-.banner {
-  top: 0;
-  justify-content: center;
-  image-rendering: pixelated;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100vh;
-}
-.footer{
-  min-height: 6vh;
-  min-width: 600px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: auto;
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: rgb(41, 41, 41);
-  clear: both;
-  padding: 6px 10px;
-  text-align: right;
-  position:absolute;
-  width:100%;
-  margin-top: 1vh;
-}
-.home{
-  flex-grow: 1;
-}
 .description {
-  min-width: 30%;
+  display: flex;
+  min-width: 50%;
   max-width: 70%;
+  min-height: 30%;
 }
-.description > a {
-  max-height: 30vh; 
+.description > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
   border-radius: 25px;
   border-color: rgb(230, 170, 115);
   border-width: 3px;
-  justify-content: center;
   font-family: pixelFont;
+  text-align: center;
+  text-wrap: wrap;
+  min-width: 100%;
+
 }
-.description > a > h2 {
+.description > div > h2 {
+  display: flex;
   color: rgb(255, 223, 193);
   font-size: 4vh;
+  word-break:break-all;
 }
-.description > a > p {
+.description > div > p {
+  display: flex;
   color: rgb(255, 223,193);
   font-size: 2.5vh;
 }
+/*
+
 
 .about{
   display: flex;
@@ -115,7 +89,7 @@ body {
   min-width: 400px;
 }
 .characterPanel{
-  /*background-color: rgb(247, 75, 75); */
+  background-color: rgb(247, 75, 75); 
   display: flex;
   width: 70%;
   height: 70%;
@@ -150,45 +124,7 @@ body {
   image-rendering: crisp-edges;
 }
 
-.socials > a {
-  display: flex;
-  width: max-content;
-  flex-direction: row;
-  align-items: end;
-  color: azure;
-  font-family: pixelFont;
-  font-size: 200%;
-}
-.socials > a:hover {
-  border-color: rgba(230, 171, 115, 0.808);
-  background-color: rgba(255, 223, 193, 0.829);
-  border-width: 2px;
-  border-radius: 5px;
-  color:rgb(41, 41, 41)
-}
-.socials > a > img {
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-  margin-right: 10px;
-}
-.logo{
-  width: 52px;
-  height: 52px;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-}
-.tinyLogo {
-  width: 40px;
-  height: 40px;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-}
-.tinyLogo + p {
-  font-size: 50%;
-}
+
 .games {
   height: 88vh;
   display: flex;
@@ -281,4 +217,4 @@ body {
 .gameIdea > p {
   isolation: isolate;
 }
-
+*/

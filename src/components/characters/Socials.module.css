@@ -13,3 +13,33 @@ logo.tiny {
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
+.logo{
+  width: 52px;
+  height: 52px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.socials > a {
+  display: flex;
+  width: max-content;
+  flex-direction: row;
+  align-items: center;
+  color: azure;
+  font-family: pixelFont;
+  font-size: 200%;
+}
+.socials > a:hover {
+  border-color: rgba(230, 171, 115, 0.808);
+  background-color: rgba(255, 223, 193, 0.829);
+  border-width: 2px;
+  border-radius: 5px;
+  color:rgb(41, 41, 41)
+}
+.socials > a > img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  margin-right: 10px;
+}

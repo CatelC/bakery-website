@@ -1,6 +1,7 @@
-import { CSSProperties, FC } from "react";
+import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import styles from './Socials.module.css';
 
 export interface SocialMediaProps {
     style?: string;
@@ -11,7 +12,7 @@ export interface SocialMediaProps {
 
 export const SocialMedia: FC<SocialMediaProps> = ({ type, link, name, style }) => {
     return (
-        <div className="socials">
+        <div className={styles.socials}>
             <Link href={link} target="_blank">
                 <img className={style}
                     src={type}
