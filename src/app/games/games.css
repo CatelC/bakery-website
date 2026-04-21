@@ -1,0 +1,27 @@
+.games {
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.gamePanel {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+  color:rgb(230, 170, 115);
+}
+
+.game{
+  height: 80%;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.game > * {
+  padding-top: 5%;
+}

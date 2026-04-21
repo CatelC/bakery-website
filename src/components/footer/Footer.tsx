@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer">
             <SocialMedia   
                     type={insta.src}
-                    style={"logo"}
+                    style="logo"
                     link="https://www.instagram.com/thebakerygs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     name="@thebagerygs"
                 />

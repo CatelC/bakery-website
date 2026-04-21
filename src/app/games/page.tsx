@@ -1,6 +1,7 @@
 import GameSheet from "@/components/games/GameSheet";
 import defaultBackground from "../../../public/images/games/default.png"
 import theBakeryBackground from "../../../public/images/games/TheBakery.png"
+import './games.css';
 
 export default function Games(){
     return (

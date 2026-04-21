@@ -21,6 +21,13 @@ logo.tiny {
   image-rendering: crisp-edges;
 }
 
+.socials {
+  width: 15%;
+  min-width: 10%;
+  height: 70%;
+  min-height: 60%;
+  border-radius:20%;
+}
 .socials > a {
   display: flex;
   width: max-content;
