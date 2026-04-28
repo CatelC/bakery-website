@@ -17,6 +17,7 @@ const GameIdea: FC<GameIdeaProps> = ({ text, backgroundImagePath }) => {
     return (
         <div className={`gameIdea ${backgroundImagePath != undefined ? "gameIdeaDefault" : ""}`}
             style={{ "--bg-image-game-idea": `url(${backgroundImagePath != undefined ? backgroundImagePath : defaultBackground.src})` }}>
+            <p>TEST</p>
             <div className="gameDiv">
                 <p>{text}</p>
             </div>

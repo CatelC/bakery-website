@@ -25,3 +25,21 @@
 .game > * {
   padding-top: 5%;
 }
+
+.subtext {
+  padding-top : 1%;
+  padding-bottom: 10%;
+  color:rgb(230, 170, 115);
+}
+
+.title {
+  font-size: 200%;
+  font-family: pixelFont;
+  color:rgb(230, 170, 115);
+}
+.gameIdeaSheet {
+  width: 80%;
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

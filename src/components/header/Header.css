@@ -14,11 +14,8 @@
 }
 
 .navBarButton {
-  width: 15%;
-  min-width: 10%;
-  height: 70%;
-  min-height: 60%;
-  border-radius:20%;
+    height: 40%;
+    width: 20%;
 }
 .navigation > a:hover {
   filter: drop-shadow(2px 2px 1px rgba(255, 223, 193, 0.5))

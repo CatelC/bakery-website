@@ -6,18 +6,14 @@ export default function thebakery() {
         <main className="game">
 
             <div className="description">
-                <a
-                    className="group border px-5 py-4 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <div>
                     <h2>
                         THE BAKERY
                     </h2>
                     <p>
                         The Bakery is our very first games ! It is still in development but we aim to have a playable beta by the end of 2024.
                     </p>
-                </a>
+                </div>
             </div>
             <p className="title">
                 What you can expect in The Bakery :
@@ -35,6 +31,9 @@ export default function thebakery() {
                 backgroundImagePath={defaultBackground.src}
                 />
             </div>
+            <p className="subtext">
+                *Hover over the blocks to see what's up*
+            </p>
         </main>
     );
 }

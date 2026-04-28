@@ -69,7 +69,6 @@ body {
   display: flex;
   color: rgb(255, 223, 193);
   font-size: 4vh;
-  word-break:break-all;
 }
 .description > div > p {
   display: flex;
@@ -123,59 +122,5 @@ body {
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
-.title {
-  font-size: 200%;
-  font-family: pixelFont;
-  color:rgb(230, 170, 115);
-}
-.gameIdeaSheet {
-  width: 80%;
-  display : flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.gameIdea {
-  width: 20%;
-  height: 100%;
-  display: grid;
-  position: relative;
-  transition: color 1s, border-color 1s;
-}
-.gameIdea::before {
-  background-image: var(--bg-image-game-idea);
-  border-radius: 25px;
-  content: '';
-  position: absolute;
-  inset: 0;
-}
-.gameIdeaDefault::before{
-  background-size: contain;
-}
 
-.gameDiv{
-  isolation:isolate;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  border-width: 3px;
-  border-radius: 25px;
-  border-color: rgba(0, 0, 0, 0);
-  color:rgb(0, 0, 0,0);
-  background-color: rgba(90, 18, 18, 0);
-  text-align: center;
-  font-family: pixelFont;
-  text-wrap: balance;
-  place-items: center;
-  transition: backdrop-filter 1s, color 1s, border-color 1s;
-}
-
-.gameDiv:hover{
-  border-color: rgba(230, 171, 115, 0.808);
-  color:rgb(255, 223, 193);
-  backdrop-filter: blur(5px);
-  backdrop-filter: brightness(0.5);
-}
-.gameIdea > p {
-  isolation: isolate;
-}
 */
