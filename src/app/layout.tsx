@@ -18,18 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
-        <div className="pageOuter">
-          <header>
-            <Header />
-          </header>
-          <main>
-            {children}
-          </main>
-          <footer>
-            <Footer />
-          </footer>
-        </div>
+      <body  className="bodyContainer" suppressHydrationWarning>
+        <header>
+          <Header />
+        </header>
+        {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

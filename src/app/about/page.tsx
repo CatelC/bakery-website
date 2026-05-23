@@ -9,6 +9,7 @@ import twitter from "../../../public/images/socials/twitter.png"
 import soundcloud from "../../../public/images/socials/soundcloud.png"
 import Link from "next/link";
 import SocialMedia from "@/components/characters/SocialMediaLink";
+import "./about.css";
 
 export default function About() {
     return (
@@ -21,12 +22,6 @@ export default function About() {
                     job="Software Engineer, Game Developer"
                 >
                     <SocialMedia
-                        type={twitter.src}
-                        style="tinyLogo"
-                        link="https://x.com/AIkazart"
-                        name="@AIkazart"
-                    />
-                    <SocialMedia
                         type={linkedin.src}
                         style="tinyLogo"
                         link="https://www.linkedin.com/in/clement-catel/"
@@ -37,7 +32,7 @@ export default function About() {
                     profilePicPath={PPLouis.src}
                     name="CATEL"
                     surname="Louis"
-                    job="Sound Designer, Composer, Pixel Artist"
+                    job="Sound Designer, Composer"
                 >
                     <SocialMedia
                         type={linkedin.src}
@@ -48,14 +43,14 @@ export default function About() {
                     <SocialMedia
                         type={insta.src}
                         style="tinyLogo"
-                        link="https://www.instagram.com/louis._ctl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        name="@louis._ctl"
+                        link="https://www.instagram.com/uraz.lc/"
+                        name="@uraz.lc"
                     />
                     <SocialMedia
                         type={youtube.src}
                         style="tinyLogo"
                         link="https://www.youtube.com/@louiscatel3586"
-                        name="Uraz - Louis Catel"
+                        name="Uraz"
                     />
                     <SocialMedia
                         type={soundcloud.src}

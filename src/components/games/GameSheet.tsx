@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import defaultBackground from "../../../public/images/games/default.png"
+import "./Games.component.css";
 
 
 interface GameSheetProps {
@@ -14,10 +15,7 @@ const GameSheet: FC<GameSheetProps> = ({ backgroundImagePath, name, link }) => {
         <Link href={"/games" + link} className="gameSheet" style={{
             /* Make this an if statement : if no background image page is given, it takes the default one and applu backgroundSize to cover
             If it does contain a background image*/ 
-            backgroundImage: `url(${backgroundImagePath!=undefined ? backgroundImagePath : defaultBackground.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            imageRendering: "pixelated",
+            backgroundImage: `url(${backgroundImagePath!=undefined ? backgroundImagePath : defaultBackground.src})`
         }} >
             <p>
                 {name}

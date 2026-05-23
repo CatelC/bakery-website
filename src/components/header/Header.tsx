@@ -3,6 +3,7 @@ import Link from "next/link";
 import homeLogo from "../../../public/images/Home.png"
 import gamesLogo from "../../../public/images/Games.png"
 import aboutLogo from "../../../public/images/AboutUs.png"
+import './Header.css'
 
 export default function Header() {
     return (
