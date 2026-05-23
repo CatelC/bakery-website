@@ -4,7 +4,9 @@ import defaultBackground from "../../../public/images/games/default.png"
 
 interface GameIdeaProps {
     text: string;
+    title: string;
     backgroundImagePath?: string;
+    repeat?: boolean;
 }
 
 declare module "react" {
@@ -13,11 +15,11 @@ declare module "react" {
     }
 }
 
-const GameIdea: FC<GameIdeaProps> = ({ text, backgroundImagePath }) => {
+const GameIdea: FC<GameIdeaProps> = ({ text, title, backgroundImagePath, repeat }) => {
     return (
-        <div className={`gameIdea ${backgroundImagePath != undefined ? "gameIdeaDefault" : ""}`}
+        <div className={`gameIdea ${repeat == true ? "noRepeat" : "gameIdeaDefault"}` }
             style={{ "--bg-image-game-idea": `url(${backgroundImagePath != undefined ? backgroundImagePath : defaultBackground.src})` }}>
-            <p>TEST</p>
+            <p>{title}</p>
             <div className="gameDiv">
                 <p>{text}</p>
             </div>

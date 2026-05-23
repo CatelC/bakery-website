@@ -16,10 +16,13 @@
 
 .gameIdea {
   width: 20%;
-  height: 100%;
+  min-width: fit-content;
+  height: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  transition: color 1s, border-color 1s;
   display: grid;
   position: relative;
-  transition: color 1s, border-color 1s;
 }
 .gameIdea::before {
   background-image: var(--bg-image-game-idea);
@@ -30,6 +33,10 @@
 }
 .gameIdeaDefault::before{
   background-size: contain;
+}
+.noRepeat::before{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .gameDiv{
@@ -50,8 +57,9 @@
 }
 
 .gameIdea > p {
-  color: rgba(0, 0, 0, 0);
-  font-size: 4vh;
+  color: rgb(230, 170, 115);
+  font-size: 6vh;
+  font-family: pixelFont;
   text-align: center;
 }
 

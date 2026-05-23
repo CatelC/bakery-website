@@ -23,9 +23,8 @@ logo.tiny {
 
 .socials {
   width: 15%;
-  min-width: 10%;
-  height: 70%;
-  min-height: 60%;
+  min-width: fit-content;
+  min-height: fit-content;
   border-radius:20%;
 }
 .socials > a {

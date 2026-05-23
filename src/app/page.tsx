@@ -6,7 +6,6 @@ export default function Home() {
   return (
     
     <main className="home">
-      
       <div>
         <Image
           className="banner"

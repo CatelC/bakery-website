@@ -1,7 +1,7 @@
 .footer{
   height: 10%;
   width: 100%;
-  min-height: 6vh;
+  min-height: fit-content;
   min-width: 600px;
   display: flex;
   justify-content: space-evenly;

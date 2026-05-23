@@ -20,13 +20,16 @@ export default function thebakery() {
             </p>
             <div className="gameIdeaSheet">
                 <GameIdea
+                title="Simulation"
                 text="Realistic and reproductible recipes of breads and pastries that you can create through a series of minigame, or even in real life !"
                 backgroundImagePath={defaultBackground.src}
                 />
                 <GameIdea
+                title="Management"
                 text="Manage your own bakery! Buy the ingredients, upgrade your tools and sell your homemade pastries to your client."
                 />
                 <GameIdea
+                title="Cozy"
                 text="A cozy bakery, homemade pixel art and music."
                 backgroundImagePath={defaultBackground.src}
                 />

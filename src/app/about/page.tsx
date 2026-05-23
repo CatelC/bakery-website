@@ -9,6 +9,7 @@ import twitter from "../../../public/images/socials/twitter.png"
 import soundcloud from "../../../public/images/socials/soundcloud.png"
 import Link from "next/link";
 import SocialMedia from "@/components/characters/SocialMediaLink";
+import "./about.css";
 
 export default function About() {
     return (
@@ -31,7 +32,7 @@ export default function About() {
                     profilePicPath={PPLouis.src}
                     name="CATEL"
                     surname="Louis"
-                    job="Sound Designer, Composer, Pixel Artist"
+                    job="Sound Designer, Composer"
                 >
                     <SocialMedia
                         type={linkedin.src}
@@ -49,7 +50,7 @@ export default function About() {
                         type={youtube.src}
                         style="tinyLogo"
                         link="https://www.youtube.com/@louiscatel3586"
-                        name="Uraz - Louis Catel"
+                        name="Uraz"
                     />
                     <SocialMedia
                         type={soundcloud.src}
